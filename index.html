@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Alumnos - Villa Maipú Pilates</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Registro Alumnos - Villa Maipú Pilates</h1>
+      <div class="header">
+        <ul>
+          <li class="active form_1_progessbar">
+            <div>
+              <p>1</p>
+            </div>
+          </li>
+          <li class="form_2_progessbar">
+            <div>
+              <p>2</p>
+            </div>
+          </li>
+          <li class="form_3_progessbar">
+            <div>
+              <p>3</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="form_wrap student">
+        <div class="form_1 data_info registered_students">
+          <h2>Crear Usuario</h2>
+          <form>
+            <div class="form_container">
+              <div class="input_wrap">
+                <label for="email_address">E-mail</label>
+                <input type="email" name="E-mail" class="input" id="email_address" required>
+              </div>
+              <div class="input_wrap">
+                <label for="user_name">Usuario</label>
+                <input type="text" name="Usuario" class="input" id="user_name" required>
+              </div>
+              <div class="input_wrap">
+                <label for="password">Contraseña</label>
+                <input type="password" name="Contraseña" class="input" id="password" required>
+              </div>
+              <div class="input_wrap">
+                <label for="confirm_password">Confirmar Contraseña</label>
+                <input type="password" name="Confirmar Contraseña" class="input" id="confirm_password">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form_2 data_info" style="display: none;">
+          <h2>Registro Alumnos</h2>
+          <form>
+            <div class="form_container">
+              <div class="input_wrap">
+                <label for="name">Nombre</label>
+                <input type="text" name="Nombre" class="input" id="name" required>
+              </div>
+              <div class="input_wrap">
+                <label for="surname">Apellido</label>
+                <input type="text" name="Apellido" class="input" id="surname" required>
+              </div>
+              <div class="input_wrap">
+                <label for="brithdate">Fecha de nacimiento</label>
+                <input type="date" name="Fecha de nacimiento" class="input" id="brithdate" required>
+              </div>
+              <div class="input_wrap">
+                <label for="age">Edad</label>
+                <input type="number" name="Edad" class="input" id="age" required>
+              </div>
+              <div class="input_wrap">
+                <label for="address">Domicilio</label>
+                <input type="text" name="Domicilio" class="input" id="address" required>
+              </div>
+              <div class="input_wrap">
+                <label for="phoneNumber">Celular</label>
+                <input type="text" name="Celular" class="input" id="phoneNumber" required>
+              </div>
+              <div class="input_wrap">
+                <label for="studentId">Número de registro</label>
+                <input type="number" name="Número de registro" class="input" id="studentId">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form_3 data_info" style="display: none;">
+          <h2>Cuestionario de Admisión</h2>
+          <h3>"A continuación, dejo expresa constancia que la siguiente información solicitada, es cierta y verdadera:"</h3>
+          <form>
+            <div class="form_container">
+              <div class="input_wrap">
+                <label for="questions_1">¿Padece afecciones cardiacas?</label>
+                <input type="text" name="¿Padece afecciones cardiacas?" class="input" id="questions_1" required>
+              </div>
+              <div class="input_wrap">
+                <label for="questions_2">¿Padece afecciones respiratorias?</label>
+                <input type="text" name="¿Padece afecciones respiratorias?" class="input" id="questions_2" required>
+              </div>
+              <div class="input_wrap">
+                <label for="questions_3">¿Padece afecciones neurológicas?</label>
+                <input type="text" name="¿Padece afecciones neurológicas?" class="input" id="questions_3" required>
+              </div>
+              <div class="input_wrap">
+                <label for="questions_4">¿Padece lesiones articulares?</label>
+                <input type="text" name="¿Padece lesiones articulares?" class="input" id="questions_4" required>
+              </div>
+              <div class="input_wrap">
+                <label for="questions_5">¿Padece lesiones óseas (fracturas)?</label>
+                <input type="text" name="¿Padece lesiones óseas (fracturas)?" class="input" id="questions_5" required>
+              </div>
+              <div class="input_wrap">
+                <label for="questions_6">¿Padece presión arterial normal?</label>
+                <input type="text" name="¿Padece presión arterial normal?" class="input" id="questions_6" required>
+              </div>
+              <div class="input_wrap">
+                <label for="questions_7">¿Fuma?</label>
+                <input type="text" name="¿Fuma?" class="input" id="questions_7" required>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="btns_wrap">
+        <div class="common_btns form_1_btns">
+          <button type="button" class="btn_next">Siguiente <span class="icon"><ion-icon name="arrow-redo-outline"></ion-icon></span></button>
+        </div>
+        <div class="common_btns form_2_btns" style="display: none;">
+          <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-undo-outline"></ion-icon></span>Atras</button>
+          <button type="button" class="btn_next">Siguiente <span class="icon"><ion-icon name="arrow-redo-outline"></ion-icon></span></button>
+        </div>
+        <div class="common_btns form_3_btns" style="display: none;">
+          <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-undo-outline"></ion-icon></span>Atras</button>
+          <button type="button" class="btn_done">Hecho</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal_wrapper">
+      <div class="shadow"></div>
+      <div class="success_wrap">
+        <span class="modal_icon"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+        <p>Has completado con éxito el proceso</p>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
